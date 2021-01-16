@@ -32,12 +32,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.3.tar.gz",
-                    "sha256": "0e26726bc8c722325d7e847ffe3b452852991e31ce457855291e3dea70840929"
-                },
-                {
-                    "type": "patch",
-                    "path": "dpf-build.patch"
+                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.4.tar.gz",
+                    "sha256": "2bdf76975cc4018f6001ef87ea40290e2a990db9dc66de3f0a7c21062fb21034"
                 },
                 {
                     "type": "file",
