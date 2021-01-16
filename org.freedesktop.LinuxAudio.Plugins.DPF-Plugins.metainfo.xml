@@ -22,6 +22,28 @@
   <metadata_license>CC0-1.0</metadata_license>
   <update_contact>hub_AT_figuiere.net</update_contact>
   <releases>
+    <release date="2021-01-15" version="1.4">
+      <url>https://github.com/DISTRHO/DPF-Plugins/releases/tag/v1.4</url>
+      <description>
+        <p>DPF:</p>
+        <ul>
+          <li>Auto-detect compiler target, fixing as-is build with ARM systems</li>
+          <li>Allow to use EXE_WRAPPER as makefile option, to help cross-compilation</li>
+          <li>Fix build with headers in custom path</li>
+          <li>Fix "make install" for macOS and Windows</li>
+          <li>Fix exported LV2 metadata to pass checks/validation</li>
+          <li>Make mouse-wheel delta independent of window size</li>
+        </ul>
+        <p>Kars:</p>
+        <ul>
+          <li>Fix audio buffer reuse, causing bad audio in some hosts</li>
+        </ul>
+        <p>Nekobi:</p>
+        <ul>
+          <li>Set default MIDI CC for all parameters</li>
+        </ul>
+      </description>
+    </release>
     <release date="2019-07-14" version="1.3" />
   </releases>
 </component>
