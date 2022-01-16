@@ -23,6 +23,8 @@
                 "cp -av bin/*-dssi.so ${FLATPAK_DEST}/dssi",
                 "install -d ${FLATPAK_DEST}/lv2",
                 "cp -av bin/*.lv2 ${FLATPAK_DEST}/lv2",
+                "install -d ${FLATPAK_DEST}/vst3",
+                "cp -av bin/*.vst3 ${FLATPAK_DEST}/vst3",
                 "install -d ${FLATPAK_DEST}/lxvst",
                 "cp -av bin/*-vst.so ${FLATPAK_DEST}/lxvst",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.DPF-Plugins.metainfo.xml",
@@ -32,8 +34,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.4.tar.gz",
-                    "sha256": "2bdf76975cc4018f6001ef87ea40290e2a990db9dc66de3f0a7c21062fb21034"
+                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.5.tar.gz",
+                    "sha256": "a421bfc1fe879473e5b5862dca4070e94e4fbe8daa13a6de0d4c432df25747a0"
                 },
                 {
                     "type": "file",
