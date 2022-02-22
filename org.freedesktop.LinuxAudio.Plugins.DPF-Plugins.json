@@ -25,8 +25,9 @@
                 "cp -av bin/*.lv2 ${FLATPAK_DEST}/lv2",
                 "install -d ${FLATPAK_DEST}/vst3",
                 "cp -av bin/*.vst3 ${FLATPAK_DEST}/vst3",
-                "install -d ${FLATPAK_DEST}/lxvst",
-                "cp -av bin/*-vst.so ${FLATPAK_DEST}/lxvst",
+                "install -d ${FLATPAK_DEST}/vst",
+                "cp -av bin/*-vst.so ${FLATPAK_DEST}/vst",
+                "ln -sf vst $FLATPAK_DEST/lxvst",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.DPF-Plugins.metainfo.xml",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DPF-Plugins --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DPF-Plugins",
                 "install -Dm644 -t $FLATPAK_DEST/share/licenses/dpf-plugins LICENSE"
