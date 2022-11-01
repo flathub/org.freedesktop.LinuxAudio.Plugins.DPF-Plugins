@@ -14,7 +14,7 @@
             "name": "dpf-plugins",
             "buildsystem": "simple",
             "build-commands": [
-                "make"
+                "make -j${FLATPAK_BUILDER_N_JOBS}"
             ],
             "post-install": [
                 "install -d ${FLATPAK_DEST}/ladspa",
@@ -27,6 +27,8 @@
                 "cp -av bin/*.vst3 ${FLATPAK_DEST}/vst3",
                 "install -d ${FLATPAK_DEST}/vst",
                 "cp -av bin/*-vst.so ${FLATPAK_DEST}/vst",
+                "install -d ${FLATPAK_DEST}/clap",
+                "cp -av bin/*.clap ${FLATPAK_DEST}/clap",
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.DPF-Plugins.metainfo.xml",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DPF-Plugins --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DPF-Plugins",
                 "install -Dm644 -t $FLATPAK_DEST/share/licenses/dpf-plugins LICENSE"
@@ -34,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.5.tar.gz",
-                    "sha256": "a421bfc1fe879473e5b5862dca4070e94e4fbe8daa13a6de0d4c432df25747a0"
+                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.6.tar.gz",
+                    "sha256": "175e3675a56a386918fab0b4b630632fb9506597fedf2ebde0691dbebc1cc2a7"
                 },
                 {
                     "type": "file",

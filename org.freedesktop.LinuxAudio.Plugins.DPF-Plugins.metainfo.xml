@@ -3,23 +3,26 @@
   <id>org.freedesktop.LinuxAudio.Plugins.DPF-Plugins</id>
   <extends>org.freedesktop.LinuxAudio.BaseExtension</extends>
   <name>DPF-Plugins</name>
-  <summary>DPF-Plugins LV2/VST/VST3</summary>
+  <summary>DPF-Plugins LADSPA/DSSI/LV2/CLAP/VST/VST3</summary>
   <description>
-    <p>This collection of LADSPA, DSSI, LV2, VST and VST3 plugins contains:</p>
+    <p>This collection of LADSPA, DSSI, LV2, CLAP, VST and VST3 plugins contains:</p>
     <ul>
       <li>Mini-Series: 3-Band EQ, 3-Band splitter, Ping Pong Pan
-      (LADSPA, LV2, VST and VST3).</li>
-      <li>Max-Gen samples: MaBitcrush, MaFreeverb, MaGigaverb, MaPitchshift
-      (LADSPA, LV2, VST and VST3).</li>
-      <li>MVerb: Studio quality reverb (LADSPA, LV2, VST and VST3).</li>
-      <li>ndc-Plugs: Amplitude Imposer, Cycle Shifter, Soul Force (LADSPA, LV2,
-      VST and VST3).</li>
-      <li>Nekobi: simple single-oscillator synth based on Roland TB-303 (DSSI,
-      LV2, VST and VST3).</li>
-      <li>Kars: Simple karplus-strong plucked string synth (DSSI, LV2, VST and
+      (LADSPA, LV2, CLAP, VST and VST3).</li>
+      <li>Max-Gen samples: MaBitcrush, MaFreeverb, MaGigaverb,
+      MaPitchshift (LADSPA, LV2, CLAP, VST and VST3).</li>
+      <li>MVerb: Studio quality reverb (LADSPA, LV2, CLAP, VST and
       VST3).</li>
-      <li>glBars: An OpenGL bars visualization plugin (LV2, VST and VST3).</li>
-      <li>ProM: An awesome music visualizer (LV2, VST and VST3).</li>
+      <li>ndc-Plugs: Amplitude Imposer, Cycle Shifter, SouForce
+      (LADSPA, LV2, CLAP, VST and VST3).</li>
+      <li>Nekobi: simple single-oscillator synth based on Roland
+      TB-303 (DSSI, LV2, CLAP, VST and VST3).</li>
+      <li>Kars: Simple karplus-strong plucked string synth (DSSI, LV2,
+      CLAP, VST and VST3).</li>
+      <li>glBars: An OpenGL bars visualization plugin (LV2, CLAP, VST
+      and VST3).</li>
+      <li>ProM: An awesome music visualizer (LV2, CLAP, VST and
+      VST3).</li>
     </ul>
   </description>
   <url type="homepage">https://distrho.sourceforge.io/plugins</url>
@@ -27,6 +30,26 @@
   <metadata_license>CC0-1.0</metadata_license>
   <update_contact>hub_AT_figuiere.net</update_contact>
   <releases>
+    <release date="2022-10-31" version="1.6">
+      <url>https://github.com/DISTRHO/DPF-Plugins/releases/tag/v1.6</url>
+      <description>
+        <ul>
+          <li>Initial CLAP support</li>
+          <li>Stabilize VST3 support</li>
+          <li>Set audio port configuration for all plugins</li>
+          <li>Set VST3 categories in a few more plugins</li>
+          <li>Update to latest DPF</li>
+        </ul>
+        <p>Plugin specific changes:</p>
+        <ul>
+          <li>Kars: Fix playback after a sample rate change</li>
+          <li>Nekobi: Fix deadlock when receiving a MIDI message bigger than 3 bytes</li>
+          <li>Nekobi: Make waveform slider behave as a button</li>
+          <li>ProM: Fix invalid context (GL compat instead of GL3) in some setups</li>
+          <li>ProM: Force keyboard focus on click</li>
+        </ul>
+      </description>
+    </release>
     <release date="2022-01-15" version="1.5">
       <url>https://github.com/DISTRHO/DPF-Plugins/releases/tag/v1.5</url>
       <description>
