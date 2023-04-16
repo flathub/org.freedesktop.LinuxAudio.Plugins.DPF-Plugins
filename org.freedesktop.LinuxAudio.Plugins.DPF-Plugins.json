@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.6.tar.gz",
-                    "sha256": "175e3675a56a386918fab0b4b630632fb9506597fedf2ebde0691dbebc1cc2a7"
+                    "url": "https://github.com/DISTRHO/DPF-Plugins/archive/v1.7.tar.gz",
+                    "sha256": "13c474cf52406b38a8998150b4ab6c10aef99a7fbab4b0dd48b4ba88c2fba7d9"
                 },
                 {
                     "type": "file",
